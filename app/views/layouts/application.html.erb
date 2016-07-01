@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tardigrade</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- Latest compiled and minified CSS for bootstrap -->
+  <!-- TODO: import assets instead of relying on CDN when deploying, dawg-->
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.1/bootstrap-material-design.css">
+
+</head>
+<body>
+
+  <%= yield %>
+<!--   <div id="app"></div> -->
+  <!-- this is where your frontend component will be included -->
+  <!-- <div id="app"></div> -->
+
+  <!-- this load application.js which inclides frontend.js -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.1/bootstrap-material-design.iife.min.js"></script>
+</body>
+</html>

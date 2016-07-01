@@ -1,0 +1,15 @@
+/* THIS SHOULD NOT COMPILE BY ITSELF TO CSS */
+
+@mixin vendorProperty($property, $value) {
+  -webkit-$attribute: $value; // (Chrome, Safari, newer versions of Opera.)
+  -moz-$attribute: $value; // (Firefox)
+  -o-$attribute: $value; // (Old versions of Opera)
+  -ms-$attribute: $value; // (Internet Explorer)
+}
+
+@mixin vendorValue($property, $value) {
+  $attribute: -webkit-$value; // (Chrome, Safari, newer versions of Opera.)
+  $attribute: -moz-$value; // (Firefox)
+  $attribute: -o-$value; // (Old versions of Opera)
+  $attribute: -ms-$value; // (Internet Explorer)
+}

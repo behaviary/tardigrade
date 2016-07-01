@@ -1,0 +1,7 @@
+@import 'utilities';
+
+body {
+  @include vendorProperty(display, flex);
+}
+
+

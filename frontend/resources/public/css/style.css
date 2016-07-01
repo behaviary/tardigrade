@@ -1,0 +1,7 @@
+/* some style */
+/* remove these when Sass is established */
+
+body {
+  display: flex;
+  justify-content: center;
+}
